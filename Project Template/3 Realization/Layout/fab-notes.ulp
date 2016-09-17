@@ -1,0 +1,82 @@
+#usage "<qt>This EAGLE User Language Program generates a script "
+       "which places a fab notes on layer 150 on the current board.<br>"
+       "<p>"
+       "THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, "
+       "EXPRESSED OR IMPLIED.<br>"
+       "<author>Author: support@cadsoft.de</author>"
+       "</qt>"
+	   
+string version = "Version 4.1";
+
+if (EAGLE_VERSION * 100 + EAGLE_RELEASE < 410) {
+string h;
+sprintf(h, "Eagleversion %d %d ", EAGLE_VERSION, EAGLE_RELEASE);
+  dlgMessageBox(h + "This ULP does not run in Eagle Versions older than 4.1", "OK");
+  exit(0);
+}
+
+string file;
+int xoff = 140;
+int indent = 120;
+int pos = 0;
+
+string A[];
+int n = 0;
+A[n++]="FABRICATION NOTES: (UNLESS OTHERWISE SPECIFIED)";
+A[n++]="ALL MATERIALS ARE TO BE RoHS COMPATABLE WHERE APPLICABLE";
+A[n++]="1. BOARD TO BE MANUFACTURED PER I.P.C. A-600-H";
+A[n++]="2. MATERIAL: LAMINATE MUST MEET RoHS/LEAD FREE COMPLIANT STANDARDS ";
+A[n++]="\ - BOARD MATERIAL: FR4";
+A[n++]="\ - INTERNAL LAYERS: 1 OZ COPPER CLAD";
+A[n++]="\ - EXTERNAL LAYERS: 1 OZ COPPER CLAD. FINISHED WEIGHT.";
+A[n++]="\ - FINISHED BOARD THICKNESS .059in +/- .007in METAL-TO-METAL";
+A[n++]="3. HOLE SIZE TOLERANCE +/-.003 AFTER PLATING. ";
+A[n++]="\ - COPPER PLATING IN ALL HOLES TO BE .001 MIN. ";
+A[n++]="\ - ALL HOLES WITHIN .005 OF TRUE POSITION.";
+A[n++]="4. FINISH: EXPOSED PADS TO BE COATED WITH IMMERSION GOLD OVER";
+A[n++]="\ ELECTROLESS NICKEL PER IPC-6012 CLASS 2";
+A[n++]="5. SOLDERMASK BOTH SIDES OVER BARE EOPPER (SMOBC)";
+A[n++]="\ - USE LIQUID PHOTO IMAGEABLE (LPI), GREEN. ";
+A[n++]="\ - CONFORM T0 SM840. TYPE B. CLASS II.";
+A[n++]="6. SILKSCREEN IS TO BE WHITE EPOXY INK, TOP AND BOTTOM SIDE";
+A[n++]="7. PCB SHALL BE CLEAN AND FREE FROM ALL FOREIGN MATERIAL.";
+A[n++]="8. WARPAGE SPECIFICATION IS .010 PER INCH";
+A[n++]="\ MEASURED ALONG THE LONGEST SIDE.";
+A[n++]="9. ALL DIMENSIONS EXCEPT BOARD DIMENSI0NS ARE IN INCHES.";
+A[n++]="\ - FAB DIMENSION TOLERANCES XX +/-.010. XXX +/-.005";
+A[n++]="10. LAYERS STACKED AS FOLLOWS:";
+A[n++]="\ - LAYER 1 (TOP): TOP SIDE";
+A[n++]="\ - LAYER 2 (INTERNAL): GROUND";
+A[n++]="\ - LAYER 3 (INTERNAL): VCC";
+A[n++]="\ - LAYER 4 (BOTTOM): BOTTOM SIDE";
+
+
+
+board(B) {
+
+	real ylegend = u2mil(B.area.y1);
+	real xlegend = u2mil(B.area.x2) + 40;
+
+	file = filedir(B.name) + "Fabnotes.scr";
+	output(file, "wtD") {
+		printf("# exported with %s from %s.\n", version, B.name);
+		printf("GRID mil;\n");
+		printf("CHANGE SIZE 50;\n");
+		printf("LAYER 150 Notes;\n");
+		printf("CHANGE LAYER 150;\n");
+		printf("WINDOW FIT;\n");
+	
+		for (int i = 0; i < n; ++i) {
+			pos = 0;
+			pos = strchr(A[i], '-');
+			if (pos == 0) {
+				printf("TEXT '%s' (%f %f);\n", A[i],xlegend + xoff + indent, ylegend -= 100);
+			} else {
+				printf("TEXT '%s' (%f %f);\n", A[i],xlegend + xoff, ylegend -= 180);
+			}
+		}
+		printf("WINDOW FIT;\n");
+	}
+	
+}
+exit("SCRIPT '" + file + "';");

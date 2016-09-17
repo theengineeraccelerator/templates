@@ -1,0 +1,35 @@
+Generative Questions for Product Definition. 
+
+General 
+- Anything uncertain, mark as red or with question marks
+
+Features 
+- List all the Features you can think of
+
+- For each feature list all the important information associated with that feature in the characteristics
+
+- What are the environments the product goes through during its life cycle. What addition features or characteristics are implied by the
+
+Flows
+- Each Feature should show up in the Flow Diagram as a block
+
+- What is each block connected to what? Make sure all signal sources are connected to signal sinks
+
+- Where is the device boundary? Which block are inside the device boundary and which are not
+
+- When a signal crosses a device boundary there is a interface
+
+Behaviors
+- What does the user do first.  Then what happens
+
+- Power is applied. What happens next.  
+
+- What does the user want to do. How do they do that. 
+
+- What happens before this step. What happens after this step 
+
+- All state transitions must terminate
+
+
+
+

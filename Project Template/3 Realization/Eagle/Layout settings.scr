@@ -1,0 +1,18 @@
+#Grid settings
+grid mil 10 
+grid alt mil 1
+
+route
+width 32 # Power and GND
+width 14 # Analog
+wdith 6  # Digital
+
+
+display 2 #route 2
+display 15 #rout 15
+
+display 25
+display 26
+display 29
+display 30
+
