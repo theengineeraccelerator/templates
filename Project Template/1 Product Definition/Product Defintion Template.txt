@@ -1,98 +1,62 @@
-Ocean Drifter Definition
+﻿INSERT PRODUCT NAME Definition
+
 
 Introduction
 ADD INTRODUCTION
 
-Drifter
-Device Characteristics
-    - Max Weight: 15lb
-    - Max Height (X): 1ft 
-    - Max Length (Y): 1ft
-    - Max Width (Z): 1ft
-    - Target Cost: <$1000
-    - Product Life Time Target: 1.5yr
-    - Operating Temperature: 32 - 100 DegF
-Feature List
-    Satellite Communication
-    GPS
-        Characteristics
-            - Detects location wave height, and period 
-    Sky Sensor
-        Characteristics
-            - Detect sky color on compass points and vertically
-            - Detect amount of cloud cover
-    
-    Charge Controller 
-        Characteristics
-            -
-    
-    Enclosure
-        Characteristics
-            - Water tight
-            - Salt resistant 
-    Sea Anchor
-        Characteristics 
-    Signal Processor
-        Characteristics
-            - 
-    Power Controller
-    Power Switch
-    Moisture Sensor
-    Battery Monitor
 
-Battery        
+Conventions
+//: A To-Be-Determined requirement. Color set by the Comments element type
+[ ... ]: Future Feature. Color set by the Identifier element type
 
-Solar Panel ?? 
-        
 
-Installation
-Device Characteristics
-    - Max Weight: 
-    - Max Height (X):  
-    - Max Length (Y): 
-    - Max Width (Z):    
-    - Target Cost:
+Product Characteristics
+    - Weight:
+    - Height (X): 
+    - Length (Y):
+    - Width (Z):
+    - Target Cost: 
     - Product Life Time Target:
-    - Operating Temperature:  
+    - Operating Temperature: 
+
+
+
+
+INSERT DEVICE 1 NAME
 Feature List
-    Server
+   FEATURE 1
+    Characteristics
+        - Characteristic
+            - Subcharacteristic
+                - Subcharacteristic
+                    - Subcharacteristic
+    
+
 
 Behavior Definition
-Drifter 
 Product States
-    SLEEPING - sensor are not being read, Signal Processor is shut down...
+    INSERT PRODUCT STATES
 
- Behavior
-    
-    Initial State: SLEEPING
-        Event: Wakeup Timer Ends
-            - Wake up Signal Processor
-            - Take Data 
-            - Process Data 
-            - IF Data is Different 
-                - Send Results
-            - Shut Down Signal Processor
 
-Installation
-
+Detailed Behavior
+   Initial State: INSERT STATE
+       EVENT 1
+            # Step 1
+                # Substep 1
+                    # Substep 2
         
 Interface List
-    Drifter --> Installation
-    Characteristics
-        - Bandwidth: ??
-        - Protocol: Iridium
-        - One Communication
-        - Data Packet
-            - Max size 370 Bytes 
-            - Contents
-                - ?? 
-
-    FROM <--> TO
+   FROM <--> TO
     Characteristics
         - Characteristic
 Command Definition
 
+
 Command             Description                                                 
+
+
+
+
 
 
 
