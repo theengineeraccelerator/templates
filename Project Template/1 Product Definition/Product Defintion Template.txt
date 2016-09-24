@@ -1,4 +1,4 @@
-﻿INSERT PRODUCT NAME Definition
+INSERT PRODUCT NAME Definition
 
 
 Introduction
@@ -6,9 +6,8 @@ ADD INTRODUCTION
 
 
 Conventions
-//: A To-Be-Determined requirement. Color set by the Comments element type
-[ ... ]: Future Feature. Color set by the Identifier element type
-
+??: A To-Be-Determined requirement. 
+[ ... ]: Future Feature. 
 
 Product Characteristics
     - Weight:
@@ -49,19 +48,11 @@ Interface List
    FROM <--> TO
     Characteristics
         - Characteristic
+
 Command Definition
-
-
 Command             Description                                                 
 
 
 
 
 
-
-
-
-Security
-Regulation
-Mechanical
-Manufacturing
