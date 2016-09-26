@@ -1,1 +1,0 @@
-sh process_hours.sh rawHours.txt > processedHours.txt 
