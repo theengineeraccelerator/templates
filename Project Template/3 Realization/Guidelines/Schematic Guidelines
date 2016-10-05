@@ -2,8 +2,9 @@ Schematic Guidelines
 The Engineer Accelerator
 Malcolm Knapp
 
-- Set Up
+- General
 	- Must have a frame with Project, Designer Name, Rev, and Date
+	- All components should have Name and Value displayed
 - Architecture
 	- Inputs on the left, outputs on the right
 	- All text should be readable
@@ -39,3 +40,11 @@ Malcolm Knapp
 	- All net connections should be called out with a junction
 	- Air wires can be used so long as it is clear that the net is connected to another place in the schematic. If you use a air wire indicate this with a named floating net. 
 
+- ERC
+	Errors - These you must fix
+		Close but unconnected wires
+		Missing Junction
+		Only One Pin unless that pin is a No Connected (NC)
+		No Value unless the part will be part of the BOM
+		Pin Without Net
+	Ignorable - These you can Approve

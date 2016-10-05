@@ -13,7 +13,8 @@ Symbols
 	- Name and Value Called out
 
 Footprint
-	- Name Called out
+	- Name called out
+	- Must have a component outline 
 	- Origin in the center of the footprint
 	- ICs
 		- Call out pin 1
@@ -24,3 +25,7 @@ Footprint
 	- Capacitors
 		- For polarized capacitors call out positive pin
 
+		
+
+
+	

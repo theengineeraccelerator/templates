@@ -23,6 +23,7 @@ Layer Stack Up
 
 Placement
 General
+	- All components should have Name only displayed
 	- Group Components by logical function
 		- Power
 		- I/O
@@ -72,5 +73,14 @@ Silkscreen
 	- Only references should be displayed
 	- All references should be the same size a readable
 	- If possible the reference should be visible when the component has been placed  
+
+DRC
+	Errors - These you must fix
+		Drill
+		Clearance
+		Overlap
+	Ignorable - These you can Approve
+		Stopmask
+		Silkscreen overlap only if it does not impact readability
 
 
