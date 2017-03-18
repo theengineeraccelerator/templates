@@ -1,6 +1,5 @@
 INSERT PRODUCT NAME Definition
 
-
 Introduction
 ADD INTRODUCTION
 
@@ -27,9 +26,6 @@ Feature List
     Characteristics
         - Characteristic
             - Subcharacteristic
-                - Subcharacteristic
-                    - Subcharacteristic
-    
 
 
 Behavior Definition

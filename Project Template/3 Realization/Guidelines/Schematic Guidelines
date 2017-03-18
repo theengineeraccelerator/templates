@@ -56,7 +56,5 @@ Malcolm Knapp
 	Errors - These you must fix
 		Close but unconnected wires
 		Missing Junction
-		Only One Pin unless that pin is a No Connected (NC)
-		No Value unless the part will be part of the BOM
-		Pin Without Net
+		Only One Pin unless that pin is a No Connected (NC)		Pin Without Net
 	Ignorable - These you can Approve
