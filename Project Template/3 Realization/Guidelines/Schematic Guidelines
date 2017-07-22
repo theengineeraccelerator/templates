@@ -11,10 +11,11 @@ Malcolm Knapp
 	- Group related components. 
 - References
 	Resistors - R
+	Potentiometers - POT
 	Capacitors - C
 	Indicators - L
 	Transistor - Q
-	Connectors - JP
+	Connectors - JP or CONN
 	ICs - U
 	Crystals - X
 	LEDs - LED

@@ -33,8 +33,7 @@ General
 	- Orient components so connections between them are as straight line as possible
 	- Orient components so the the number of signal crosses is minimized
 Connectors
-	- Place on as few sides as possible
-	- Coordinate with mechanical design
+	- Place the all one one side if possible
 Bypass capacitors
 	- If possible route the power trace through to the bypass capacitor before connecting to the power plane
 	- Place as close as possible to power pin
@@ -71,7 +70,7 @@ Drills
 
 Silkscreen
 	- Only references should be displayed
-	- All references should be the same size a readable
+	- All references should be the same size and readable
 	- If possible the reference should be visible when the component has been placed  
 
 DRC

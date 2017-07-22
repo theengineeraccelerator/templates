@@ -1,0 +1,31 @@
+Done Points
+Product Definition
+	All Signals and connected from Source to Sink
+	All block names are synchronized between Characteristics list Flow diagram
+	All Story sequences have been enumerated 
+
+Architecture 
+	An implementation path has been found for all blocks
+	All the Major Components BOM information has been entered
+	All Major component currents have been entered into the Current Budget
+
+Realization
+	All Symbols and footprints have been made
+	All Nets have been connected
+	All guidelines have been met and ERC is clear
+	
+	Placement is complete
+	Routing is complete
+	DRC is done
+
+	All cells in full BOM have been filled out and imported into the schematic
+	
+Bring Up
+	All Blocks have are working with a single point test
+	
+Testing 
+	Performance of All blocks has been mapped
+	All Behavior sequences have been run though
+	
+ 
+	

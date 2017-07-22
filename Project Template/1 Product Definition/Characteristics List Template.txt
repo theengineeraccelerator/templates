@@ -1,4 +1,4 @@
-INSERT PRODUCT NAME Definition
+insert PRODUCT NAME Definition
 
 Introduction
 ADD INTRODUCTION
@@ -25,7 +25,8 @@ Feature List
    FEATURE 1
     Characteristics
         - Characteristic
-            - Subcharacteristic
+           
+		Implementation
 
 
 Behavior Definition
@@ -37,9 +38,7 @@ Detailed Behavior
    Initial State: INSERT STATE
        EVENT 1
             # Step 1
-                # Substep 1
-                    # Substep 2
-        
+
 Interface List
    FROM <--> TO
     Characteristics
